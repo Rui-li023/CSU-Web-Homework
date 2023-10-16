@@ -10,8 +10,6 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-
-
 }
 
 .aside {
@@ -19,19 +17,19 @@ body {
     height: 100%;
     overflow-x: hidden;
     display: block;
-
 }
 
-.content{
+.content {
     height: calc(100% - 100px);
 }
+
 .article {
     flex: 1;
     height: 100%;
     overflow-y: auto;
     background-color: #f4f4f4;
     overflow-x: hidden;
-    box-shadow:  inset rgba(003, 122, 255, 0.15) 7px 0 10px -3px;
+    box-shadow: inset rgba(003, 122, 255, 0.15) 7px 0 10px -3px;
 }
 
 .radius {
@@ -43,24 +41,21 @@ body {
     left: -20%;
     top: -10%;
     box-shadow: rgba(003, 122, 255, 0.3) 0px 5px 20px 0px;
-
-
 }
 
-
-.topbar{
+.topbar {
     background-color: white;
     width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
-    box-shadow:  inset rgba(003, 122, 255, 0.15)  7px 0 10px -3px;
+    box-shadow: inset rgba(003, 122, 255, 0.15) 7px 0 10px -3px;
 }
 
-.leftbar{
+.leftbar {
     margin-top: -40px;
     width: auto;
     background-image: url(resources/选择.png);
@@ -68,93 +63,89 @@ body {
     background-position: 20px 15px;
 }
 
-.baritem{
+.baritem {
     width: auto;
     height: auto;
     margin: 50px;
-
-
     /* padding-left: 10px; */
 }
 
-.baritem img{
+.baritem img {
     width: 20px;
     height: 21px;
     margin-right: 15px;
     float: left;
     clear: left;
     float: left;
-    filter:invert(50%)
+    filter: invert(50%)
 }
 
-.baritem button{
+.baritem button {
     color: #666666;
     font-size: medium;
-
 }
 
-
-.headitem{
+.headitem {
     margin-left: 20px;
     margin-right: 10px;
 }
 
-button{
-    border-style: none; 
+button {
+    border-style: none;
     cursor: pointer;
-    background-color: Transparent; 
+    background-color: Transparent;
     font-family: "黑体", sans-serif;
     color: #333333;
     font-weight: bold;
 }
 
-.searchdiv{ width: 300px;                                        
+.searchdiv {
+    width: 300px;
     height: 40px;
     background: #f4f4f4;
     /* background: #ccc; */
     border: 1px solid #eee;
-    border-radius: 20px;                           
+    border-radius: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
-    
-} 
+}
 
-.search{
+.search {
     border: 1px solid #eee;
     background: transparent;
-    border-style: none; 
+    border-style: none;
     outline: none;
     font-family: "黑体", sans-serif;
     color: #333333;
     /* font-weight: bold; */
 }
 
-.topbar-2nd{
+.topbar-2nd {
     width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items:center;
-    justify-content:left;
+    align-items: center;
+    justify-content: left;
     padding-left: 50px;
 }
 
-.headitem2{
+.headitem2 {
     margin-left: 40px;
     margin-right: 10px;
     /* font-size: large; */
 }
 
-.topbtn2{
-    font-size:medium;
+.topbtn2 {
+    font-size: medium;
     padding: 10px;
 }
 
-.maincontent{
+.maincontent {
     margin: 50px;
     margin-top: 0px;
     height: calc(100% - 80px);
@@ -162,7 +153,7 @@ button{
     border-radius: 10px;
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -171,111 +162,110 @@ button{
     height: calc(100% - 60px);
 }
 
-.formitem{
+.formitem {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 }
-.formtext{width: 80px;}
 
-.formitem2{
+.formtext {
+    width: 80px;
+}
+
+.formitem2 {
     /* padding-top: 100px; */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    
 }
 
-.formitem3{
+.formitem3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 }
 
-.formitem input{
-    width: 400px;                                        
+.formitem input {
+    width: 400px;
     height: 40px;
     background: #fbfbfb;
     /* background: #ccc; */
     border: 1px solid #eee;
-    border-radius: 5px;      
-    border-color: #ebebeb;    
-    outline: none;                  
+    border-radius: 5px;
+    border-color: #ebebeb;
+    outline: none;
     /* display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items:center;
     justify-content: space-between; */
-} 
-
-.formitem2 input{
-    
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 5px;  
-    border-color: Transparent; 
-    height: 40px;
-    width: 150px;   
 }
 
-.formitem select{
-    width: 90px;                                        
+.formitem2 input {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border-color: Transparent;
+    height: 40px;
+    width: 150px;
+}
+
+.formitem select {
+    width: 90px;
     height: 40px;
     background: #fbfbfb;
     border: 1px solid #eee;
-    border-radius: 5px;      
-    border-color: #ebebeb;    
-    outline: none; 
-    margin-right: 30px;          
-    padding-left: 10px;       
-} 
+    border-radius: 5px;
+    border-color: #ebebeb;
+    outline: none;
+    margin-right: 30px;
+    padding-left: 10px;
+}
 
-.mutiselectdiv{
+.mutiselectdiv {
     padding: 20px;
-    width: 400px;                                        
+    width: 400px;
     height: 80px;
     background: #fbfbfb;
     /* background: #ccc; */
     border: 1px solid #eee;
-    border-radius: 5px;      
-    border-color: #ebebeb;    
-    outline: none;  
+    border-radius: 5px;
+    border-color: #ebebeb;
+    outline: none;
     display: flex;
     flex-direction: row;
-    justify-content: left; 
+    justify-content: left;
     flex-wrap: wrap;
 }
-
-
 
 .headitem2 button:focus {
     padding-top: 22px;
     color: #6daefa;
-  }
+}
 
-.headitem2 button:focus::after {    
+.headitem2 button:focus::after {
     content: '';
     width: 70%;
     display: block;
     margin: 0 auto;
     border-bottom: 2px solid #208bfe;
     padding: 5px;
-  }
+}
 
-.cb{
+.cb {
     display: flex;
-    align-items:center;
+    align-items: center;
     width: auto;
     font-weight: bold;
     color: #5c5c5cda;
     font-size: small;
 }
 
-.cb input{
+.cb input {
     margin-right: 10px;
     margin-left: 20px;
 }
