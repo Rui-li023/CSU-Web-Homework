@@ -17,10 +17,13 @@ body {
     height: 100%;
     overflow-x: hidden;
     display: block;
+    min-width: 220px;
 }
 
 .content {
     height: calc(100% - 100px);
+    min-width: 950px
+    /* display: flex; */
 }
 
 .article {
@@ -28,7 +31,8 @@ body {
     height: 100%;
     overflow-y: auto;
     background-color: #f4f4f4;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    width: calc(100% - 230);
     box-shadow: inset rgba(003, 122, 255, 0.15) 7px 0 10px -3px;
 }
 
@@ -45,13 +49,15 @@ body {
 
 .topbar {
     background-color: white;
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% - 230);
     height: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-around;
+    min-width: 900px;
     box-shadow: inset rgba(003, 122, 255, 0.15) 7px 0 10px -3px;
 }
 
@@ -103,7 +109,6 @@ button {
     width: 300px;
     height: 40px;
     background: #f4f4f4;
-    /* background: #ccc; */
     border: 1px solid #eee;
     border-radius: 20px;
     display: flex;
@@ -111,6 +116,7 @@ button {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
+    font-size: large;
 }
 
 .search {
@@ -120,11 +126,13 @@ button {
     outline: none;
     font-family: "黑体", sans-serif;
     color: #333333;
+    font-size: large;
+    width: 240px;
     /* font-weight: bold; */
 }
 
 .topbar-2nd {
-    width: 100%;
+    width: calc(100% - 230);
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -132,6 +140,7 @@ button {
     align-items: center;
     justify-content: left;
     padding-left: 50px;
+    flex-shrink: 0;
 }
 
 .headitem2 {
@@ -151,6 +160,7 @@ button {
     height: calc(100% - 80px);
     background-color: white;
     border-radius: 10px;
+    min-height: 600px;
 }
 
 .form {
@@ -160,6 +170,7 @@ button {
     justify-content: space-between;
     padding: 30px;
     height: calc(100% - 60px);
+    min-height: 500px;
 }
 
 .formitem {
