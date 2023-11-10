@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script>
+    </script>
     <script ref="reference" src="script.js"></script>
 </head>
 
@@ -17,7 +19,7 @@
             </div>
 
             <!-- 弹性布局 -->
-            <div class="leftbar">
+            <div class="leftbar" style="padding-top: 60px;margin-top: -120px;padding-bottom: 60px;">
                 <div class="baritem">
                     <button>
                         <!-- 颜色反转，从白色变成灰色 -->
@@ -26,8 +28,8 @@
                     </button>
                 </div>
 
-                <div class="baritem" >   
-                    <button style="color: white; " >
+                <div class="baritem">
+                    <button style="color: white; ">
                         <img src="resources/医院查询.png"  style="filter: invert(0);">
                         内容管理
                     </button>
@@ -42,7 +44,7 @@
                 </div>
 
                 <div class="baritem">
-                        
+
                     <button>
                         <img src="resources/平板-01.png">
                         产品管理
@@ -109,7 +111,6 @@
                 </div>
 
                 <div class="headitem">
-
                     <button>
                     <img src="resources/帮助.png" style="position: relative;top: 2px;" >  帮助
                     </button>
@@ -129,83 +130,98 @@
             <div class="content">
                 <!-- 第二个bar -->
                 <div class="topbar-2nd">
-                    <div  class="headitem2"> 
-                        <button class="topbtn2"> 基本信息设置 </button>
-                    </div>
-                    <div  class="headitem2">
-                        <button class="topbtn2"> SEO设置 </button>
-                    </div>
-                    <div  class="headitem2">
-                        <button class="topbtn2"> 栏目设置 </button>
+                    <div class="headitem2">
+                        <button class="topbtn2"> 基本信息设置 
+                        <div class="line"></div>
+                        </button>
                     </div>
                     <div class="headitem2">
-                        <button class="topbtn2"> 管理员设置 </button>
+                        <button class="topbtn2"> SEO设置<div class="line"></div> </button>
+
                     </div>
-                    <div  class="headitem2">
-                        <button class="topbtn2"> 在线客服设置 </button>
+                    <div class="headitem2">
+                        <button class="topbtn2"> 栏目设置<div class="line"></div> </button>
                     </div>
-                    <div  class="headitem2">
-                        <button class="topbtn2"> 接口设置 </button>
+                    <div class="headitem2">
+                        <button class="topbtn2"> 管理员设置 
+                        <div class="line"></div>
+
+                        </button>
+                    </div>
+                    <div class="headitem2">
+                        <button class="topbtn2"> 在线客服设置 
+                        <div class="line"></div>
+                        </button>
+                    </div>
+                    <div class="headitem2">
+                        <button class="topbtn2"> 接口设置 
+                        <div class="line"></div>
+                        </button>
                     </div>
                 </div>
                 <div class="maincontent">
-                    <form  class="form" method="post">
-                        <div class="formitem">  <div class="formtext">用户名：</div> <input name="name" type="text" >  </div>
-                        <div class="formitem">  <div class="formtext">密码：</div><input name="pass" type="password" >  
-                        <div style="color: #b0b0b0; padding: 10px; font-size: small; font-weight: normal;">*密码为6位以上的数字加字母组合</div>
-                    </div>
-                        
-                        <div class="formitem">  <div class="formtext">姓名：</div><input name="name" type="text" >  </div>
-                        <div class="formitem">  <div class="formtext">联系方式：</div><input name="pass" type="text" >  </div>
-                        <div class="formitem">  <div class="formtext">邮箱地址：</div><input name="name" type="email" >  </div>
-                        <div class="formitem">  <div class="formtext">添加时间：</div> 
-                            <select id="years" onchange="doChange()" >
-                                <option value="">年</option></select> 
+                    <form class="form" method="post">
+                        <div class="formitem">
+                            <div class="formtext">用户名：</div> <input name="name" type="text"> </div>
+                        <div class="formitem">
+                            <div class="formtext">密码：</div><input name="pass" type="password">
+                            <div style="color: #b0b0b0; padding: 10px; font-size: small; font-weight: normal;">*密码为6位以上的数字加字母组合</div>
+                        </div>
+
+                        <div class="formitem">
+                            <div class="formtext">姓名：</div><input name="name" type="text"> </div>
+                        <div class="formitem">
+                            <div class="formtext">联系方式：</div><input name="pass" type="text"> </div>
+                        <div class="formitem">
+                            <div class="formtext">邮箱地址：</div><input name="name" type="email"> </div>
+                        <div class="formitem">
+                            <div class="formtext">添加时间：</div>
+                            <select id="years" onchange="doChange()">
+                                <option value="">年</option></select>
 
                             <select id="months" onchange="doChange()">
-                                <option value="">月</option> </select> 
+                                <option value="">月</option> </select>
 
                             <select id="dates">
                                 <option value="">日</option>
                             </select>
                         </div>
 
-                        <div class="formitem3" style="align-items: normal;">  <div class="formtext">开放权限：</div>
-                        <div class="mutiselectdiv">  
-                            <div class="cb">
-                                <input  type="checkbox"/>全部
+                        <div class="formitem3" style="align-items: normal;">
+                            <div class="formtext">开放权限：</div>
+                            <div class="mutiselectdiv">
+                                <div class="cb">
+                                    <input type="checkbox" />全部
+                                </div>
+                                <div class="cb">
+                                    <input type="checkbox" />内容管理
+                                </div>
+                                <div class="cb">
+                                    <input type="checkbox" />资讯管理
+                                </div>
+                                <div class="cb">
+                                    <input type="checkbox" />产品管理
+                                </div>
+                                <div class="cb">
+                                    <input type="checkbox" />图库
+                                </div>
+                                <div class="cb">
+                                    <input type="checkbox" />广告管理
+                                </div>
+                                <div class="cb">
+                                    <input type="checkbox" />留言管理
+                                </div>
+                                <div class="cb">
+                                    <input type="checkbox" />设置
+                                </div>
                             </div>
-                            <div class="cb">
-                                <input  type="checkbox"/>内容管理
-                            </div>
-                            <div class="cb">
-                                <input  type="checkbox"/>资讯管理
-                            </div>
-                            <div class="cb">
-                                <input  type="checkbox"/>产品管理
-                            </div>
-                            <div class="cb">
-                                <input  type="checkbox"/>图库
-                            </div>
-                            <div class="cb">
-                                <input  type="checkbox"/>广告管理
-                            </div>
-                            <div class="cb">
-                                <input  type="checkbox"/>留言管理
-                            </div>
-                            <div class="cb">
-                                <input  type="checkbox"/>设置
-                            </div>
+
+
                         </div>
-                        
-                    
-                    </div>
-                       
+
                         <div class="formitem2">
-                            <input type="submit" name="Button" value="保存" 
-                            style="background-color: #057effb2;color: white; box-shadow: 0px 0px 5px 0px #057dff;"/>
-                            <input type="reset" name="Reset" value="取消"
-                            style="border: 1px solid #e2e2e2; background-color: #ffffff;"/>
+                            <input type="submit" name="Button" value="保存" style="background-color: #057effb2;color: white; box-shadow: 0px 0px 5px 0px #057dff;" />
+                            <input type="reset" name="Reset" value="取消" style="border: 1px solid #e2e2e2; background-color: #ffffff;" />
                         </div>
 
 

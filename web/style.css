@@ -62,11 +62,12 @@ body {
 }
 
 .leftbar {
+    height: 600px;
     margin-top: -40px;
     width: auto;
     background-image: url(resources/选择.png);
     background-repeat: no-repeat;
-    background-position: 20px 15px;
+    background-position: 20px 125px;
 }
 
 .baritem {
@@ -201,6 +202,7 @@ button {
 }
 
 .formitem input {
+    font-size: medium;
     width: 400px;
     height: 40px;
     background: #fbfbfb;
@@ -223,6 +225,33 @@ button {
     border-color: Transparent;
     height: 40px;
     width: 150px;
+}
+
+
+/* .headitem2 button:focus {
+    padding-top: 22px;
+    color: #6daefa;
+} */
+
+
+/* .headitem2 button:focus::after {
+    content: '';
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 2px solid #208bfe;
+    padding: 5px;
+} */
+
+.line {
+    content: '';
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    height: 1px;
+    margin-bottom: -14px;
+    border-bottom: 2px solid #f4f4f4;
+    padding: 6px;
 }
 
 .formitem select {
@@ -251,20 +280,6 @@ button {
     flex-direction: row;
     justify-content: left;
     flex-wrap: wrap;
-}
-
-.headitem2 button:focus {
-    padding-top: 22px;
-    color: #6daefa;
-}
-
-.headitem2 button:focus::after {
-    content: '';
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    border-bottom: 2px solid #208bfe;
-    padding: 5px;
 }
 
 .cb {
